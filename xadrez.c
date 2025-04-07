@@ -243,18 +243,18 @@ int main()
 
         case 4: // Peça Cavalo
 
-            switch (direcao) // Switch para determinar a direção do movimento da RAINHA
+            switch (direcao) // Switch para determinar a direção do movimento do CAVALO
             {
             case 'A':
             case 'a':
-                for (i = 0; i < 1; i++)
+                for (i = 0; i < 1; i++) 
                 {
                     while (j < 2)
                     {
-                        printf("CIMA\n");
-                        j++;
-                    }
-                    printf("DIREITA\n");
+                        printf("CIMA\n");   // Movimento do cavalo cima-cima-direita
+                        j++;                                    
+                    }                                             
+                    printf("DIREITA\n");   
                 }
                 break;
 
@@ -264,7 +264,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("CIMA\n");
+                        printf("CIMA\n"); // Movimento do cavalo cima-cima-esquerda
                         j++;
                     }
                     printf("ESQUERDA\n");
@@ -277,7 +277,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("DIREITA\n");
+                        printf("DIREITA\n"); // Movimento do cavalo direita-direita-cima
                         j++;
                     }
                     printf("CIMA\n");
@@ -290,7 +290,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("DIREITA\n");
+                        printf("DIREITA\n"); // Movimento do cavalo direita-direita-baixo
                         j++;
                     }
                     printf("BAIXO\n");
@@ -303,7 +303,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("BAIXO\n");
+                        printf("BAIXO\n"); // Movimento do cavalo baixo-baixo-direita
                         j++;
                     }
                     printf("DIREITA\n");
@@ -316,7 +316,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("BAIXO\n");
+                        printf("BAIXO\n");  // Movimento do cavalo baixo-baixo-esquerda
                         j++;
                     }
                     printf("ESQUERDA\n");
@@ -329,7 +329,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("ESQUERDA\n");
+                        printf("ESQUERDA\n");   // Movimento do cavalo esquerda-esquerda-cima
                         j++;
                     }
                     printf("CIMA\n");
@@ -342,7 +342,7 @@ int main()
                 {
                     while (j < 2)
                     {
-                        printf("ESQUERDA\n");
+                        printf("ESQUERDA\n");   // Movimento do cavalo esquerda-esquerda-baixo
                         j++;
                     }
                     printf("BAIXO\n");
@@ -363,11 +363,11 @@ int main()
             break;
         }
 
-        printf("Digite '0' = SAIR ou '1' = CONTINUAR: ");
+        printf("Digite '0' = SAIR ou '1' = CONTINUAR: "); // Opção de escolha de continuação do algoritmo
         scanf("%d", &resp);
         printf("\n");
 
-    } while (resp == 1);
+    } while (resp == 1); // Loop de repetição do algoritmo
 
     return 0;
 }
